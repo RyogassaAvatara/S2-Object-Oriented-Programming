@@ -29,7 +29,7 @@ public class Driver {
                     } else if (choice == 4) {
                         checkBalance(input, aBank);
                     } else {
-                        System.out.println("GoodBye!");
+                        System.out.println("BYEEE!!");
                     }
                     System.out.println();
                 } while (choice != 5);
@@ -49,12 +49,12 @@ public class Driver {
                     } else if (choice == 4) {
                         checkBalance(input, bBank);
                     } else {
-                        System.out.println("GoodBye!");
+                        System.out.println("BYE!!");
                     }
                     System.out.println();
                 } while (choice != 5);
             } else {
-                System.out.println("GoodBye!");
+                System.out.println("BYE!!");
             }
             System.out.println();
         } while (bankChoice != 3);
@@ -87,7 +87,7 @@ public class Driver {
         return false;
     }
 
-    //    Method to deposit on a selected account
+ 
     public static void doDeposit(Scanner input, Bank bankName) {
         // Get account ID
         System.out.print("\nPlease enter account ID: ");
@@ -110,7 +110,7 @@ public class Driver {
         }
     }
 
-    //    Method to withdraw on a selected account
+
     public static void doWithdraw(Scanner input, Bank bankName) {
         // Get account ID
         System.out.print("\nPlease enter account ID: ");
