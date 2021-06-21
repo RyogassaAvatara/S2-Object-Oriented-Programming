@@ -122,7 +122,7 @@ public class NBAManager implements LeagueManager {
              if(team.getName().equals(line)){
                  System.out.println("===============" + team.getLocation() + " " + team.getName() + " STATS" + "===============");
                  System.out.println(" WINS: " + team.getWinCount());
-                 System.out.println(" LOSTS: " + team.getDefeatCount()); 
+                 System.out.println(" LOSTS: " + team.getLossCount()); 
                  System.out.println(" Team Scores: " + team.getScoredScoreCount());
                  System.out.println(" Opponent Scores: " + team.getReceivedScoreCount());
                  System.out.println(" Points: " + team.getPoints());
@@ -219,13 +219,13 @@ public class NBAManager implements LeagueManager {
          if (homeScore > awayScore) {            
              home.setPoints(home.getPoints()+3);
              home.setWinCount(home.getWinCount()+1);
-             away.setDefeatCount(away.getDefeatCount()+1);
+             away.setLossCount(away.getLossCount()+1);
          }
          // if away team scores more than home team, away team score will be added
          else if (homeScore < awayScore) {            
              away.setPoints(away.getPoints()+3);
              away.setWinCount(away.getWinCount()+1);
-             home.setDefeatCount(home.getDefeatCount()+1);
+             home.setLossCount(home.getLossCount()+1);
          }
          else {
              home.setPoints(home.getPoints()+1);
