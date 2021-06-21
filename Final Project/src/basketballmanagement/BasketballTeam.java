@@ -9,7 +9,7 @@ package basketballmanagement;
 public class BasketballTeam extends SportsTeam { 
     
     private int winCount;
-    private int defeatCount;
+    private int lossCount;
     private int scoredScoreCount;
     private int receivedScoreCount;
     private int points;
@@ -20,8 +20,8 @@ public class BasketballTeam extends SportsTeam {
         return winCount;
     }
    
-    public int getDefeatCount(){
-        return defeatCount;
+    public int getLossCount(){
+        return lossCount;
     }
     
     public int getScoredScoreCount() {
@@ -45,8 +45,8 @@ public class BasketballTeam extends SportsTeam {
         winCount = i;
     }
     
-    public void setDefeatCount(int i) {
-        defeatCount=i;
+    public void setLossCount(int i) {
+        lossCount=i;
     }
     
     public void setScoredScoreCount(int i){
